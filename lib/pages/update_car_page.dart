@@ -1,5 +1,5 @@
 import 'package:app/model/CarDetails.dart';
-import 'package:app/server/connector.dart';
+import 'package:app/services/connector.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/widgets.dart';
@@ -150,7 +150,7 @@ class _UpdateCarPageState extends State<UpdateCarPage> {
                         horsePowerText
                     ).then((value) => {
                       setState(() {
-                        Navigator.pushReplacementNamed(context, 'home');
+                        Navigator.pushReplacementNamed(context, 'car_details', arguments: carDetails.id);
                       })
                     }).onError((error, stackTrace) =>
                     {

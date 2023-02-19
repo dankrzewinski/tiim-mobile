@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:app/server/connector.dart';
+import 'package:app/services/connector.dart';
 
 FloatingActionButton getLogoutButton(BuildContext context) {
   return FloatingActionButton(

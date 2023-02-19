@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app/server/connector.dart';
+import 'package:app/services/connector.dart';
 
 import '../widgets/widgets.dart';
 
