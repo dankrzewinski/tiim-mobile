@@ -189,6 +189,7 @@ class _CarDetailsPageState extends State<CarDetailsPage> {
                       ],
                     ),
                     if (snapshot.data!.isUserOwner) ...[
+                      const Padding(padding: EdgeInsets.only(top: 10.0)),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
